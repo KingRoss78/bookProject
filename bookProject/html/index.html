@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Project</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Project 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to My Book Project</h2>
+            <p>This is used to track books I am reading.</p>
+        </section>
+        <section id="readingList">
+            <h2>Reading List</h2>
+            <form>
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <button type="submit" id="addBookButton">Add Book</button>
+            </form>
+            <ul id="bookList">
+                <!-- Book entries will appear here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Book Project</p>
+    </footer>
+</body>
+</html> 

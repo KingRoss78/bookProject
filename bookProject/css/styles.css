@@ -1,0 +1,27 @@
+#bookList {
+    list-style: none;
+    padding: 0;
+}
+
+#bookList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#bookList select {
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#bookList select:focus {
+    outline: none;
+    border-color: #007bff;
+}
