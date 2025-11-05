@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!--<link rel="stylesheet" href="styles.css"> -->
+    <script src="../js/register.js"></script>
+</head>
 <p>This is the registration page.</p>
 <section id="registrationSection">
             <h2>Please Register</h2>
-            <form>
+            <form id="registerForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -10,4 +19,5 @@
                 <input type="password" id="password" name="password" required>
                 <button type="submit" id="submitRegister">Register</button>
             </form>
+            <p id="registerMessage"></p>
         </section>

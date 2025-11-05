@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Http.Json;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Serve static files (wwwroot)
+// Serve static files
 app.UseStaticFiles();
 
-// Redirect root to index.html
+// Root redirect
 app.MapGet("/", () => Results.Redirect("html/index.html"));
 
 // Login endpoint
@@ -32,7 +32,7 @@ app.MapPost("/login", async (HttpContext context) =>
 // Register endpoint
 app.MapPost("/register", async (HttpContext context) =>
 {
-    var registerData = await context.Request.ReadFromJsonAsync<LoginRequest>();
+    var registerData = await context.Request.ReadFromJsonAsync<RegisterRequest>();
     if (registerData == null) return Results.BadRequest(new { message = "Invalid request" });
 
     using var connection = new SqliteConnection("Data Source=Data/users.db");
@@ -56,4 +56,6 @@ app.MapPost("/register", async (HttpContext context) =>
 
 app.Run();
 
+// Records for deserializing requests
 record LoginRequest(string Email, string Password);
+record RegisterRequest(string Name, string Email, string Password);
