@@ -1,10 +1,11 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.AspNetCore.Http.Json;
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+// Setting up the web app so it has everything it needs before it runs
+var builder = WebApplication.CreateBuilder(args); //args refers to command line arguments
+var app = builder.Build(); //creating instance of app that deals with HTTP requests
 
-// Serve static files
+// Serve static files, so files under wwwroot are accessible
 app.UseStaticFiles();
 
 // Root redirect
@@ -53,6 +54,12 @@ app.MapPost("/register", async (HttpContext context) =>
         return Results.Json(new { message = "User already exists" });
     }
 });
+
+app.MapPost("/logout", async (HttpContext context) =>
+{
+    context.Response.Cookies.Delete("sessionId"); 
+    return Results.Json(new { message = "Logged out successfully" });
+});       
 
 app.Run();
 

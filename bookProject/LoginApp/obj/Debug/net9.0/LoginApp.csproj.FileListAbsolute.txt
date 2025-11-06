@@ -45,11 +45,6 @@
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/scopedcss/bundle/LoginApp.styles.css
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/wq262aqni2-xytxsp3tms.gz
-/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/bajik03cd7-3w2hctx8cw.gz
-/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/e50u25lsag-ixkhatgs7y.gz
-/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/86d7ugju9q-i4dvqpe3dh.gz
-/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/h5bghhq0zo-4q9n69i7kj.gz
-/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/h5lpzpeje0-c4760kf4kd.gz
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/staticwebassets.build.json
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/staticwebassets.build.json.cache
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/staticwebassets.development.json
@@ -60,3 +55,9 @@
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/LoginApp.pdb
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/LoginApp.genruntimeconfig.cache
 /Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/ref/LoginApp.dll
+/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/86d7ugju9q-1gru2p9jim.gz
+/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/cylnud9he9-17qf8n2q4e.gz
+/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/bajik03cd7-uss96pkngt.gz
+/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/e50u25lsag-huiwlhdbim.gz
+/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/h5bghhq0zo-qklm6qsaqm.gz
+/Users/rosschapman/Documents/projects/bookProject/LoginApp/obj/Debug/net9.0/compressed/h5lpzpeje0-nezfrezrvj.gz

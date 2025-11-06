@@ -31,3 +31,42 @@ document.getElementById('addBookButton').addEventListener('click', function(even
         document.getElementById('bookForm').reset();
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+   const logOutButton = document.getElementById('logOutButton');
+    console.log('Logout button element:', logOutButton);
+
+    if (logOutButton) {
+        logOutButton.addEventListener('click', async () => {
+            console.log('Logout clicked');
+            try {
+                const response = await fetch('/logout', { method: 'POST' });
+                console.log('Logout response status:', response.status, response.statusText);
+                const text = await response.text(); // read raw body
+                console.log('Logout raw response text:', text);
+
+                let data = null;
+                if (text) {
+                    try {
+                        data = JSON.parse(text);
+                    } catch (parseErr) {
+                        console.warn('Failed to parse logout response as JSON', parseErr);
+                    }
+                }
+
+                // Treat 200/204 as success; fallback to checking data.message if present
+                if (response.status === 204 || response.status === 200 || (data && data.message === 'Logged out successfully')) {
+                    console.log('Logout successful', data);
+                    window.location.href = '/html/loginPage.html';
+                } else {
+                    console.warn('Unexpected logout response', { status: response.status, data, text });
+                }
+            } catch (error) {
+                console.error('Logout failed:', error);
+            }
+        });
+    } else {
+        console.error('Logout button not found');
+    }
+});
